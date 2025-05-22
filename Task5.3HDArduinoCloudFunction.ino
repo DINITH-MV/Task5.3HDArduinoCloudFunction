@@ -12,7 +12,6 @@ String FIREBASE_AUTH = "";
 
 String PATH_URL = "/.json";
 
-
 WiFiSSLClient client;
 
 void setup() {
@@ -96,9 +95,10 @@ void loop() {
       digitalWrite(BLUE_LED, LOW);
       Serial.println("BLUE_LED : OFF");
     }
-
+    
     client.stop();
+
   } else {
-    Serial.println(">>> Connection failed.");
+    Serial.println("Connection failed.");
   }
 }
